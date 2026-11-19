@@ -584,10 +584,10 @@ function Form() {
             <button style={styles.playButton} onClick={() => {setActiveIndex(State.menu)}}>Home</button>
         )
     }
-    function sanitizeInput(input) {
+   // function sanitizeInput(input) {
         //TODO implement input sanitization logic here
-        return input;
-    }
+     //   return input;
+   // }
 
     function ClearForm() {
         setLoginForm({
