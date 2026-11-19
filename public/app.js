@@ -203,6 +203,7 @@ const State = {
     reviewItem: 7,
     viewItems: 8, //view all listed items
     failurePage: 9 //page in event of any type of error when viewing other pages
+    //TODO: How do we want to view single items?
 }
 
 //form is the funtion that index actually runs
@@ -521,61 +522,55 @@ function Form() {
 
         );
     }
-    // TODO!!!
+
     function ListItemPanel() {
         return (
+            //TODO: This needs to be a form
             <section style={styles.menuPanel} className="ListItem-panel">
 
-                <h2 style={styles.title}>Menu</h2>
+                <h2 style={styles.title}>List an Item</h2>
 
-                <button style={styles.playButton} onClick={() => {setActiveIndex(State.login)}}>Login</button>
+                <button style={styles.playButton} onClick={() => {setActiveIndex(State.login)}}> home </button>
 
-                <button style={styles.playButton} onClick={() => {setActiveIndex(State.createAccount)}}>create account</button>
             </section>
         );
     }
-    
+
+    //TODO: item purchase tied to each item page
     function PurchaseItemPanel() {
         return (
             <section style={styles.menuPanel} className="PurchaseItem-panel">
 
-                <h2 style={styles.title}>Menu</h2>
+                <h2 style={styles.title}>Purchase [item name]</h2>
 
-                <button style={styles.playButton} onClick={() => {setActiveIndex(State.login)}}>Login</button>
-
-                <button style={styles.playButton} onClick={() => {setActiveIndex(State.createAccount)}}>create account</button>
+                <button style={styles.playButton} onClick={() => {setActiveIndex(State.createAccount)}}>Add to Cart</button>
             </section>
         );
     }
 
-
+    //TODO: input to give review details and button to submit to DB
     function ReviewItemPanel() {
         return (
             <section style={styles.menuPanel} className="ReviewItem-panel">
 
-                <h2 style={styles.title}>Menu</h2>
+                <h2 style={styles.title}>Review [item name]</h2>
 
-                <button style={styles.playButton} onClick={() => {setActiveIndex(State.login)}}>Login</button>
-
-                <button style={styles.playButton} onClick={() => {setActiveIndex(State.createAccount)}}>create account</button>
+                <button style={styles.playButton} onClick={() => {setActiveIndex(State.createAccount)}}></button>
             </section>
         );
     }
 
-    
+    //TODO: needs to display all items
     function ViewItemsPanel() {
         return (
             <section style={styles.menuPanel} className="ViewItems-panel">
 
-                <h2 style={styles.title}>Menu</h2>
+                <h2 style={styles.title}>Currently Listed Items</h2>
 
-                <button style={styles.playButton} onClick={() => {setActiveIndex(State.login)}}>Login</button>
-
-                <button style={styles.playButton} onClick={() => {setActiveIndex(State.createAccount)}}>create account</button>
             </section>
         );
     }
-
+    //TODO: this is just in case something goes wrong, probably not necessary
     function FailurePanel() {
         return (
             <section style={styles.menuPanel} className="Failure-panel">
