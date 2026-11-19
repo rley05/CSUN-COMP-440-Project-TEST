@@ -410,7 +410,7 @@ function Form() {
             // TODO ^ This would require cookies
             <section style={styles.menuPanel} className="ValidLogin-panel">
 
-                <h2 style={styles.title}>Logged in as {userInput.username}</h2>
+                <h2 style={styles.title}>This should be changed???Logged in as {userInput.username}</h2>
 
                 <button style={styles.playButton} onClick={() => {setActiveIndex(State.listItem)}}>List New Item</button>
                 <button style={styles.playButton} onClick={() => {setActiveIndex(State.reviewItem)}}>Review an Item</button>
