@@ -582,12 +582,13 @@ function Form() {
 
             <h2 style={styles.title}>Something went wrong :/</h2>
             <button style={styles.playButton} onClick={() => {setActiveIndex(State.menu)}}>Home</button>
+            </section>
         );
     }
-   // function sanitizeInput(input) {
+    function sanitizeInput(input) {
         //TODO implement input sanitization logic here
-     //   return input;
-   // }
+        return input;
+    }
 
     function ClearForm() {
         setLoginForm({
