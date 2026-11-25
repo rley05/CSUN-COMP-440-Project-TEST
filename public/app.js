@@ -610,21 +610,22 @@ function Form() {
     function ListItemPanel() {
         return (
             //TODO: fill out form
+        <form onSubmit={handleListItem}>
             <section style={styles.menuPanel} className="ListItem-panel">
                 <h2 style={styles.title}>List an Item</h2>
-                    <form onSubmit={handleSubmitCreateAccount}>
-                            <h2 style={styles.title}>Create Account</h2>
+                    <form onSubmit={handleListItem}>
+                            <h2 style={styles.title}>List an Item</h2>
                                 <section style={{alignItems: 'flex-end', display: 'flex', flexDirection: 'column', gap: '8px'}}>
                                     <label>
                                         Title: <input
                                             name="title"
                                             value={loginForm.usernameInput}
-                                            onChange={updateLoginForm}
+                                            onChange={updateItemForm}
                                         />
                                     </label>
                                         <section>   </section>
                                 </section>
-                                <button type="submit" style={styles.playButton}>Create Account</button>
+                                <button type="submit" style={styles.playButton}>List Item</button>
                             </section>
                         </form>
                         
