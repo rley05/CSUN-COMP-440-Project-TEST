@@ -332,7 +332,7 @@ function Form() {
             content = (
                 <React.Fragment>
                 <ControlPanel></ControlPanel>
-                <ListItemPanel></ListItemPanel>
+                {ListItemPanel()}
                 </React.Fragment>
             );
         break;
@@ -617,6 +617,7 @@ function Form() {
                             <label>
                                 Title: <input
                                     name="title"
+                                    type="text"
                                     value={itemForm.usernameInput}
                                     onChange={updateItemForm}
                                  />
@@ -625,6 +626,7 @@ function Form() {
                             <label>
                                 Description: <input
                                     name="description"
+                                    type="text"
                                     value={itemForm.description}
                                     onChange={updateItemForm}
                                 />
