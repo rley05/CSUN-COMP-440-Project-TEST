@@ -617,10 +617,27 @@ function Form() {
                             <label>
                                 Title: <input
                                     name="title"
-                                    value={loginForm.usernameInput}
+                                    value={itemForm.usernameInput}
                                     onChange={updateItemForm}
                                  />
                              </label>
+                                <section>   </section>
+                            <label>
+                                Description: <input
+                                    name="description"
+                                    value={itemForm.description}
+                                    onChange={updateItemForm}
+                                />
+                            </label>
+                                <section>   </section>
+                            <label>
+                                Price: <input
+                                    name="price"
+                                    type="number"
+                                    value={itemForm.price}
+                                    onChange={updateItemForm}
+                                />
+                            </label>
                             <section>   </section>
                     </section>
                     <button type="submit" style={styles.playButton}>List Item</button>
