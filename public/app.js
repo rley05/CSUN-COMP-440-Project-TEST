@@ -610,24 +610,23 @@ function Form() {
     function ListItemPanel() {
         return (
             //TODO: fill out form
-            <section style={styles.menuPanel} className="ListItem-panel">
-                <form onSubmit={handleListItem}>
+            <form onSubmit={handleListItem}>
+                <section style={styles.menuPanel} className="ListItem-panel">
                     <h2 style={styles.title}>List an Item</h2>
-                    <section style={{alignItems: 'flex-end', display: 'flex', flexDirection: 'column', gap: '8px'}}>
-                        <label>
-                            Title: <input
-                                  name="title"
-                                  value={loginForm.usernameInput}
-                                  onChange={updateItemForm}
-                             />
+                        <section style={{alignItems: 'flex-end', display: 'flex', flexDirection: 'column', gap: '8px'}}>
+                            <label>
+                                Title: <input
+                                    name="title"
+                                    value={loginForm.usernameInput}
+                                    onChange={updateItemForm}
+                                 />
                              </label>
-                                    <section>   </section>
-                            </section>
-                        <button type="submit" style={styles.playButton}>List Item</button>
+                            <section>   </section>
+                    </section>
+                    <button type="submit" style={styles.playButton}>List Item</button>
+                <button style={styles.playButton} onClick={() => {setActiveIndex(State.validLogin)}}> home </button>
                     </section>
                 </form>    
-                <button style={styles.playButton} onClick={() => {setActiveIndex(State.validLogin)}}> home </button>
-            </section>
         );
     }
 
