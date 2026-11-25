@@ -273,10 +273,10 @@ function Form() {
         }));
     };
 
-    const updateInputForm = (event) => {
+    const updateItemForm = (event) => {
         const {name,value} = event.target;
 
-        setInputForm((prev) => ({
+        setItemForm((prev) => ({
             ...prev,
             [name]: value
         }));
